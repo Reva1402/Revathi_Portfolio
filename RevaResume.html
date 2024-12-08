@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revathi Vooraboina</title>
+    <!-- <link rel="stylesheet" href="Styling.css"> -->
+    <style>
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+            padding: 0;
+            background-color: #3d5466;
+            color: #333;
+            transition: background-color 0.3s ease-in-out;
+
+        }
+
+        header h2 {
+            text-align: center;
+            color: white;
+        }
+
+
+        header {
+
+            color: white;
+
+            text-align: center;
+            transition: background-color 0.3s ease-in-out;
+
+        }
+
+
+        nav {
+
+            overflow: hidden;
+        }
+
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            transition: transform 0.3s ease;
+        }
+
+        nav ul li:hover {
+            transform: scale(1.1);
+        }
+
+        nav ul li a {
+            display: block;
+            color: rgb(51, 175, 134);
+            text-decoration: underline;
+            text-align: center;
+            padding: 5px 60px;
+            transition: background-color 0.3s ease;
+            font-weight: bold;
+
+        }
+
+        nav ul li a:hover {
+
+            color: black;
+        }
+
+        #about {
+            line-height: 2;
+        }
+
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+
+        section:hover {
+            transform: translateY(-5px);
+        }
+
+        h2 {
+            color: #192419;
+            margin-bottom: 20px;
+        }
+
+        .skills-container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px;
+        }
+
+
+        .skill-item {
+            width: 160px;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin: 10px;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+
+        }
+
+
+
+        #skilltypes {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        #skilltypes:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .skills-container h3 {
+            color: #333;
+            text-align: center;
+        }
+
+
+        .skill-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            background-color: #e6f7ff;
+        }
+
+        .skill-item h3 {
+            font-size: 16px;
+            color: #333;
+            margin: 0;
+            font-weight: lighter;
+        }
+
+
+        section:hover {
+            transform: none;
+        }
+
+
+        section>div {
+            margin-bottom: 30px;
+        }
+
+
+        .project-item {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            line-height: 2;
+            
+        }
+
+        .project-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer ul {
+            margin: 0;
+            padding: 5px;
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            bottom: 0;
+
+        }
+
+        footer ul li a {
+            color: rgb(51, 175, 134);
+            text-decoration: underline;
+            text-align: center;
+            padding: 5px 60px;
+            transition: background-color 0.3s ease;
+            font-weight: bold;
+
+        }
+
+        footer ul li a:hover {
+
+            color: black;
+
+        }
+
+        .project-images{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+            .skills-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .skill-item {
+                width: 80%;
+            }
+
+            section {
+                margin: 10px;
+                padding: 10px;
+            }
+
+            footer ul {
+                flex-direction: column;
+                padding: 10px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h1>Revathi Vooraboina</h1>
+
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am a newly graduated software engineer with a strong passion for creating innovative solutions that
+            enhance organizational efficiency and drive success. I have practical experience working with Java, Python,
+            React, JavaScript, Bootstrap, SQL, Selenium, and a variety of other software development tools.
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div id="skilltypes">
+                <h3>Programming Languages</h3>
+
+                <div class="skill-item">
+                    <img src="https://i.pinimg.com/originals/79/5e/bb/795ebb5f4a470cd7242136237f61fc53.png"
+                        alt="HTML & CSS" width="30" height="30">
+
+
+                    <h3>Java</h3>
+                </div>
+                <div class="skill-item">
+                    <img src="https://icon2.cleanpng.com/20180824/qlv/kisspng-javascript-clip-art-openclipart-logo-number-1713949408965.webp"
+                        alt="HTML & CSS" width="30" height="30">
+
+
+                    <h3>JavaScript</h3>
+                </div>
+
+                <div class="skill-item">
+                    <img src="https://image.similarpng.com/very-thumbnail/2021/12/Python-programming-logo-on-transparent-background-PNG.png"
+                        alt="HTML & CSS" width="30" height="30">
+
+
+                    <h3>Python</h3>
+                </div>
+            </div>
+
+            <div id="skilltypes">
+                <h3>Front End </h3>
+                <div class="skill-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/CSS3_and_HTML5_logos_and_wordmarks.svg/2560px-CSS3_and_HTML5_logos_and_wordmarks.svg.png"
+                        alt="HTML & CSS" width="50" height="30">
+                    <h3>HTML & CSS</h3>
+                </div>
+                <div class="skill-item">
+                    <img src="https://www.svgrepo.com/show/327388/logo-react.svg" alt="HTML & CSS" width="30"
+                        height="30">
+
+                    <h3>React</h3>
+                </div>
+                <div class="skill-item">
+                    <img src="https://e7.pngegg.com/pngimages/439/345/png-clipart-bootstrap-logo-thumbnail-tech-companies-thumbnail.png"
+                        alt="HTML & CSS" width="30" height="30">
+                    <h3>Bootstrap</h3>
+                </div>
+                <div class="skill-item">
+                    <img src="https://media.istockphoto.com/id/1206186579/vector/api-with-gear-icon-linear.jpg?s=612x612&w=0&k=20&c=gLBOt_lENlfZaMUX7s74KEURBIEZDAwDyyngq8RDMDM="
+                        alt="HTML & CSS" width="30" height="30">
+
+                    <h3>Third Party APIs</h3>
+                </div>
+            </div>
+
+
+            <div id="skilltypes">
+                <h3>Back End </h3>
+                <div class="skill-item">
+                    <img src="https://firebase.google.com/static/images/brand-guidelines/logo-logomark.png"
+                        alt="HTML & CSS" width="30" height="30">
+
+
+                    <h3>Firebase</h3>
+                </div>
+            </div>
+
+
+            <div id="skilltypes">
+                <h3>Testing</h3>
+                <div class="skill-item">
+                    <img src="https://banner2.cleanpng.com/20180615/ckk/aa77zyzvo.webp" alt="HTML & CSS" width="40"
+                        height="30">
+
+
+                    <h3>Selenium</h3>
+
+                </div>
+                <div class="skill-item">
+                    <img src="https://e7.pngegg.com/pngimages/426/581/png-clipart-test-automation-manual-testing-software-testing-behavior-driven-development-others-angle-text.png"
+                        alt="HTML & CSS" width="30" height="30">
+
+
+                    <h3>Manual Testing</h3>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Academic Projects</h2>
+        <div class="project-item" style="cursor: pointer;" onclick="window.open('https://github.com/Reva1402/ReactFinalProject', '_blank')">
+            <h3>PixVibe</h3>
+            <p>Built PixVibe using <span style="font-weight: bold;">React, JavaScript, and Firebase,</span> delivering a
+                dynamic platform for sharing and
+                discovering visual content. The application offers secure account creation and management, enabling
+                users to upload photos, organize collections, and engage with others through features like commenting,
+                following, and friend requests. A personalized feed customizes content based on user interests,
+                enhancing discovery and user engagement.</p>
+                <div class="project-images">
+                    <img src="F:\Revathi_STS\Resume\Images\PV1.jpg" alt="PixVibe" width="250" height="160">
+                    <img src="F:\Revathi_STS\Resume\Images\PV2.jpg" alt="PixVibe" width="250" height="160">
+                    <img src="F:\Revathi_STS\Resume\Images\PV3.jpg" alt="PixVibe" width="250" height="160">
+                    <img src="F:\Revathi_STS\Resume\Images\PV4.jpg" alt="PixVibe" width="250" height="160">
+                    <img src="F:\Revathi_STS\Resume\Images\PV5.jpg" alt="PixVibe" width="250" height="160">
+                </div>
+        </div>
+        <div class="project-item" style="cursor: pointer;" onclick="window.open('https://github.com/Reva1402/VRV_Events', '_blank')">
+            <h3>VRV Events</h3>
+            <p>
+                Designed and developed an event management platform using <span style="font-weight: bold;">React,
+                    JavaScript, Firebase,</span> and the
+                <span style="font-weight: bold;">Stripe API</span> for secure ticket booking and payment processing. Key
+                features include role-based
+                functionalities for Administrators, Event Organizers, and
+                Attendees responsive design, secure
+                authentication, and automated testing with <span style="font-weight: bold;">Selenium</span> to ensure
+                reliability and performance.
+            </p>
+            <div class="project-images">
+                <img src="F:\Revathi_STS\Resume\Images\VRV1.jpg" alt="PixVibe" width="250" height="160">
+                <img src="F:\Revathi_STS\Resume\Images\VRV2.jpg" alt="PixVibe" width="250" height="160">
+                <img src="F:\Revathi_STS\Resume\Images\VRV3.jpg" alt="PixVibe" width="250" height="160">
+                <img src="F:\Revathi_STS\Resume\Images\VRV4.jpg" alt="PixVibe" width="250" height="160">
+                <img src="F:\Revathi_STS\Resume\Images\VRV5.jpg" alt="PixVibe" width="250" height="160">
+            </div>
+        </div>
+        <div class="project-item" style="cursor: pointer;" onclick="window.open('https://github.com/Reva1402/team2FinalProject-Coding', '_blank')">
+            <h3>Eventopia</h3>
+            <p>Built Eventopia using <span style="font-weight: bold;">React, JavaScript, Firebase, and the Google Maps
+                    API,</span> with <span style="font-weight: bold;">Selenium</span> for automated
+                testing. The platform simplifies the discovery, organization, and participation in local events,
+                promoting community engagement. It allows users to create and manage events while offering role-based
+                access for <span style="font-weight: bold;">Administrators, Moderators, and Users,</span> each with
+                tailored permissions and capabilities.</p>
+                <div class="project-images">
+                    <img src="F:\Revathi_STS\Resume\Images\EVT (1).png" alt="Eventopia" width="250" height="160">
+                    <img src="F:\Revathi_STS\Resume\Images\EVT (2).png" alt="Eventopia" width="250" height="160">
+                    <img src="F:\Revathi_STS\Resume\Images\EVT (3).png" alt="Eventopia" width="250" height="160">
+                    <img src="F:\Revathi_STS\Resume\Images\EVT (4).png" alt="Eventopia" width="250" height="160">
+                    <img src="F:\Revathi_STS\Resume\Images\EVT(5).png" alt="Eventopia" width="250" height="160">
+                </div>
+        </div>
+        
+    </section>
+
+    <footer id="contact">
+
+
+        <ul>
+
+            <li><a href="mailto:ar.revathi031@gmail.com" target="_blank">Gmail</a></li>
+            <li><a href="https://www.linkedin.com/in/revathivooraboina/" target="_blank">LinkedIn</a></li>
+            <li><a href="https://github.com/Reva1402" target="_blank">GitHub</a></li>
+            <li> <a href="https://leetcode.com/u/user9515pq/" target="_blank">LeetCode</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
